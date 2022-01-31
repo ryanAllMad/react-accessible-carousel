@@ -11,6 +11,9 @@ a:hover, a:visited:hover {
 a:visited {
   color: #595959;
 }
+main {
+  padding-bottom: 500px;
+}
 .visually-hidden {
     position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
@@ -180,3 +183,38 @@ outline: 4px solid skyblue;
       inset 0.25em 0.25em 0 #fff;
     background-color: #006600;
   }
+  /**
+  mobile styles
+  **/
+  @media only screen and (max-width: 900px) {
+    [aria-labelledby="gallery-label"], [aria-label="gallery controls"] {
+    width: 420px;
+    }
+    .instructions {
+        padding-bottom: 96px;
+        width: 424px;
+    }
+}
+@media only screen and (max-width: 480px) {
+ [aria-labelledby="gallery-label"], [aria-label="gallery controls"] {
+  width: calc(100% - 20px);
+ }
+ [aria-label="gallery controls"] {
+     flex-flow: column nowrap;
+     margin-top: -170px;
+ }
+ [aria-labelledby="gallery-label"] ul {
+   padding: 0;
+ }
+ button {
+     margin-bottom: 20px;
+ }
+ #hover, #focus {
+     max-width: 75%;
+ }
+ .instructions {
+     padding-bottom: 200px;
+    width: calc(100% - 16px);
+
+ }
+ }
