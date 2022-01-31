@@ -1,0 +1,182 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#222;
+}
+a {
+  color: #222;
+}
+a:hover, a:visited:hover {
+  color:#006600;
+}
+a:visited {
+  color: #595959;
+}
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden !important;
+}
+/*show sighted users element is actionable**/
+[aria-labelledby="gallery-label"]:focus {
+outline: 4px solid skyblue;
+}
+
+/**show scrollbar**/
+[aria-labelledby="gallery-label"]::-webkit-scrollbar {
+    height: 0.75rem;
+}
+[aria-labelledby="gallery-label"]::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+[aria-labelledby="gallery-label"]::-webkit-scrollbar-thumb {
+    background-color: #222;
+}
+[aria-labelledby="gallery-label"] {
+    scrollbar-color: #eee #222;
+    scrollbar-width: thin;
+}
+
+#hover, #focus {
+    display: none;
+    text-align: center;
+    max-width: 50%;
+    word-break: break-word;
+    margin: 10px auto;
+}
+[aria-labelledby="gallery-label"]:hover + .instructions #hover, 
+[aria-labelledby="gallery-label"]:focus + .instructions #focus,
+.touched #hover {
+    display: block!important;
+}
+
+/**layout**/
+.carousel {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+[aria-labelledby="gallery-label"] {
+    width: 820px;
+    margin: 0 auto;
+    border: 2px solid;
+    border-radius: 0.25rem 0.25rem 0 0;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    -webkit-scroll-snap-type: mandatory;
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-type: mandatory;
+    -webkit-scroll-snap-points-x: repeat(100%);
+    -ms-scroll-snap-points-x: repeat(100%);
+    scroll-snap-points-x: repeat(100%);
+}
+
+[aria-labelledby="gallery-label"] ul {
+    display: flex;
+}
+[aria-labelledby="gallery-label"] li {
+    list-style: none;
+    flex: 0 0 75%;
+    margin-right: 40px;
+}
+[aria-labelledby="gallery-label"] figure {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+}
+[aria-labelledby="gallery-label"] figcaption {
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    flex: 100%;
+}
+[aria-labelledby="gallery-label"] img{
+ display: block;
+ border-radius: 0.25rem 0.25rem;
+ margin: 2rem auto 0;
+ max-width: 100%;
+ max-height: calc(100% - 2rem);
+}
+.instructions {
+    border-radius: 0 0 0.25rem 0.25rem;
+    background-color: #222;
+    color: #eee;
+    font-weight: 700;
+    height: 6rem;
+    width: 824px;
+}
+/**controls**/
+[aria-label="gallery controls"] {
+    border-radius: 0 0 0.25rem 0.25rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 820px;
+    margin: 0 auto;
+    height: 75px;
+    margin-top: -86px;
+}
+[aria-label="gallery controls"] li{
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/**button styles**/
+
+.button-section {
+    max-width: calc(100% / 2);
+  }
+  button {
+    font-size: inherit;
+    border: 0.125rem solid transparent;
+    padding: 1rem 1.5rem;
+    border-radius: 0.25rem;
+    min-width: 150px;
+    background: #595959;
+    margin: 3% 5%;
+    color: #fff;
+  }
+  /**Icon styles**/
+  
+  .next > svg:first-of-type,
+  .previous > svg:last-of-type,
+  .send > svg:first-of-type {
+    display: none;
+  }
+  .svg-inline--fa {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-bottom: -2px;
+  }
+  .next > svg:last-of-type {
+    margin-bottom: -1px;
+  }
+  /**User interaction styles**/
+  [aria-pressed] {
+    position: relative;
+    top: -0.25rem;
+    left: -0.25rem;
+    box-shadow: 0.125em 0.125em 0 #fff, 0.25em 0.25em #222;
+  }
+  [aria-pressed]:focus {
+    outline: 2px solid transparent;
+    box-shadow: 0 0 0 0.25rem #222;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background: #595959;
+    transition: background-color ease-in-out 500ms, color ease-in 200ms,
+      border-color ease-in 200ms, box-shadow ease-in 200ms;
+  }
+  [aria-pressed="true"]:focus {
+    box-shadow: 0 0 0 0.25rem #222, inset 0 0 0 0.15rem #595959,
+      inset 0.25em 0.25em 0 #fff;
+    background-color: #006600;
+  }
