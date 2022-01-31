@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Slide from "./Slide";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faForward } from '@fortawesome/free-solid-svg-icons';
@@ -73,13 +73,6 @@ const onButtonPrevClick = () => {
        setFaIconPrev(<FontAwesomeIcon icon={faBackward} />);
  }
  }
-
-    /* 
-    to do
-    when scrolling left or right, show the correct button as pressed
-    do the same for when the user presses the left or right key
-
-*/
 
     return ( 
 <main onTouchStart={onMainTouchStart} className={`carousel ${touched}`}>
