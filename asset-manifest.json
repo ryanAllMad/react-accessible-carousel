@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-accessible-carousel/static/css/main.501b8997.css",
+    "main.js": "/react-accessible-carousel/static/js/main.71a48440.js",
+    "index.html": "/react-accessible-carousel/index.html",
+    "main.501b8997.css.map": "/react-accessible-carousel/static/css/main.501b8997.css.map",
+    "main.71a48440.js.map": "/react-accessible-carousel/static/js/main.71a48440.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.501b8997.css",
+    "static/js/main.71a48440.js"
+  ]
+}
