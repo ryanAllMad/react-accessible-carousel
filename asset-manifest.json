@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/react-accessible-carousel/static/css/main.22f471bf.css",
-    "main.js": "/react-accessible-carousel/static/js/main.71a48440.js",
+    "main.css": "/react-accessible-carousel/static/css/main.6a1a26cc.css",
+    "main.js": "/react-accessible-carousel/static/js/main.f18bbe8c.js",
+    "static/media/newico.png": "/react-accessible-carousel/static/media/newico.4db53003b7f4c0a28f45.png",
     "index.html": "/react-accessible-carousel/index.html",
-    "main.22f471bf.css.map": "/react-accessible-carousel/static/css/main.22f471bf.css.map",
-    "main.71a48440.js.map": "/react-accessible-carousel/static/js/main.71a48440.js.map"
+    "main.6a1a26cc.css.map": "/react-accessible-carousel/static/css/main.6a1a26cc.css.map",
+    "main.f18bbe8c.js.map": "/react-accessible-carousel/static/js/main.f18bbe8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.22f471bf.css",
-    "static/js/main.71a48440.js"
+    "static/css/main.6a1a26cc.css",
+    "static/js/main.f18bbe8c.js"
   ]
 }
