@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import Slide from "./Slide";
+import Footer from "./Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faForward } from '@fortawesome/free-solid-svg-icons';
 import { faBackward } from '@fortawesome/free-solid-svg-icons';
@@ -75,6 +76,7 @@ const onButtonPrevClick = () => {
  }
 
     return ( 
+<div className="wrapper">
 <main onTouchStart={onMainTouchStart} className={`carousel ${touched}`}>
     <h1><a href="https://unsplash.com/developers" title="to unsplash devs page" target="_blank" rel="noreferrer">Unspash</a> Artists Accessible Carousel</h1>
     <div ref={galleryRef} role="region" aria-labelledby="gallery-label" tabIndex="0" aria-describedby="focus">
@@ -100,6 +102,8 @@ const onButtonPrevClick = () => {
         </li>
     </ul>
 </main>
+    <Footer/>
+    </div>
     );
 };
 
