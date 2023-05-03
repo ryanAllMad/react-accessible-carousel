@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-accessible-carousel/static/css/main.200e7c5f.css",
+    "main.js": "/react-accessible-carousel/static/js/main.188be9db.js",
+    "static/media/newico.png": "/react-accessible-carousel/static/media/newico.4db53003b7f4c0a28f45.png",
+    "index.html": "/react-accessible-carousel/index.html",
+    "main.200e7c5f.css.map": "/react-accessible-carousel/static/css/main.200e7c5f.css.map",
+    "main.188be9db.js.map": "/react-accessible-carousel/static/js/main.188be9db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.200e7c5f.css",
+    "static/js/main.188be9db.js"
+  ]
+}
