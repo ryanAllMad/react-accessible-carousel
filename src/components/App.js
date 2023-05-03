@@ -29,14 +29,14 @@ const onMainTouchStart = () => {
 const scrollNext = () => {
     galleryRef.current.scrollBy({
         top: 0,
-        left: 625,
+        left: 540,
         behavior: 'smooth'
       });
 }
 const scrollPrev = () => {
     galleryRef.current.scrollBy({
         top: 0,
-        left: -585,
+        left: -540,
         behavior: 'smooth'
       });
 }
