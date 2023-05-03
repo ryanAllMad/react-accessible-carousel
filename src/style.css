@@ -91,9 +91,12 @@ outline: 4px solid skyblue;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 131px;
 }
 [aria-labelledby="gallery-label"] {
     width: 820px;
+    max-height: 500px;
+    overflow-y: hidden;
     margin: 0 auto;
     border: 2px solid;
     border-radius: 0.25rem 0.25rem 0 0;
@@ -225,6 +228,9 @@ outline: 4px solid skyblue;
     }
 }
 @media only screen and (max-width: 480px) {
+  [aria-labelledby="gallery-label"] figure {
+    margin-left: 5px;
+  }
  [aria-labelledby="gallery-label"], [aria-label="gallery controls"] {
   width: calc(100% - 20px);
  }
