@@ -90,8 +90,8 @@ const onButtonPrevClick = () => {
         </ul>
     </div>
     <div className="instructions">
-        <p id="hover">use buttons or scroll left or right for more</p>
-        <p id="focus">use buttons, tab, or your left and right arrow keys for more</p>
+        <p id="hover">use buttons or scroll left or right to view the images</p>
+        <p id="focus" aria-live="polite">use buttons, tab, or your left and right arrow keys to view the images</p>
     </div>
     <ul aria-label="gallery controls">
         <li>
